@@ -1,0 +1,580 @@
+﻿================================================================================
+ELECTRALINK FILE SCAN REPORT
+Drive               : C:\
+Generated           : 2026-05-19 18:48:30
+Folder keyword      : electralink
+Filename filter     : ^NG[_-]
+Folders found       : 7
+Total files matched : 385
+================================================================================
+
+MATCHED FOLDERS ON THIS DRIVE
+--------------------------------------------------------------------------------
+  [  385 files]  C:\ELECTRALINK-DATA
+  [    0 files]  C:\Program Files\JSCAPE MFT Server\domains\SFTPSERVER1\searching\accounts\electralink
+  [    0 files]  C:\Program Files\JSCAPE MFT Server\users\SFTPSERVER1\electralink
+  [    0 files]  C:\Users\electralink
+  [    0 files]  C:\Users\Jack.Kelly\.conda\envs\electralink_ingest
+  [    0 files]  C:\Users\Vikash.Kumar5\Desktop\Electralink_Reports
+  [    0 files]  C:\Users\Vikash.Kumar5\Desktop\Electralink_Reports_bckup
+
+HOW DATES WERE DETERMINED
+--------------------------------------------------------------------------------
+  FN_YYYYMMDD     :      385 file(s)
+
+  FN_YYYYMMDD = date taken from filename (e.g. NG_Output_20240611)
+  FN_DDMMYYYY = date taken from filename (e.g. NG_..._01012024.psv)
+  FolderName  = date taken from parent folder name (e.g. 20240102)
+  None        = no recognisable date found
+
+================================================================================
+YEAR SUMMARY  (Filename/FolderName-Year  vs  Modified-Year)
+================================================================================
+Year         FN_Count    FN_Size(MB)       MD_Count    MD_Size(MB)
+------------------------------------------------------------------------
+2022                               0              0              0
+2023               11        6253.37             11        6253.37
+2024              145      105485.38            146      107465.74
+2025              192      144121.57            192      144121.57
+2026               36       30708.09             36       30708.09
+
+================================================================================
+DETAILED BREAKDOWN BY FOLDER
+(Year > Month > Day, using filename/folder-name date)
+================================================================================
+
+################################################################################
+FOLDER PATH : C:\ELECTRALINK-DATA
+Files with date : 385
+################################################################################
+
+------------------------------------------------------------------------
+  YEAR 2022   (files: 1)
+------------------------------------------------------------------------
+
+    Dec 2022  (12)   files: 1   size: 1980.36 MB
+      Day 29:    1 file(s) -  1980.36 MB
+      >>> MISSING DAYS (30): 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 30, 31
+
+    >>> MISSING MONTHS in 2022 (11): Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov
+
+------------------------------------------------------------------------
+  YEAR 2023   (files: 11)
+------------------------------------------------------------------------
+
+    Mar 2023  (03)   files: 1   size: 441.27 MB
+      Day 01:    1 file(s) -   441.27 MB
+      >>> MISSING DAYS (30): 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+    May 2023  (05)   files: 10   size: 5812.1 MB
+      Day 17:    1 file(s) -   469.97 MB
+      Day 18:    1 file(s) -   560.22 MB
+      Day 19:    1 file(s) -    452.5 MB
+      Day 22:    1 file(s) -  1519.12 MB
+      Day 23:    1 file(s) -   483.12 MB
+      Day 24:    1 file(s) -      458 MB
+      Day 25:    1 file(s) -    469.2 MB
+      Day 26:    1 file(s) -   480.46 MB
+      Day 29:    1 file(s) -   573.92 MB
+      Day 30:    1 file(s) -   345.58 MB
+      >>> MISSING DAYS (21): 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 20, 21, 27, 28, 31
+
+    >>> MISSING MONTHS in 2023 (10): Jan, Feb, Apr, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+
+------------------------------------------------------------------------
+  YEAR 2024   (files: 145)
+------------------------------------------------------------------------
+
+    Jun 2024  (06)   files: 20   size: 14483.45 MB
+      Day 03:    1 file(s) -   1315.1 MB
+      Day 04:    1 file(s) -    820.7 MB
+      Day 05:    1 file(s) -   584.26 MB
+      Day 06:    1 file(s) -   604.72 MB
+      Day 07:    1 file(s) -    553.1 MB
+      Day 10:    1 file(s) -  1283.41 MB
+      Day 11:    1 file(s) -   599.12 MB
+      Day 12:    1 file(s) -   525.03 MB
+      Day 13:    1 file(s) -   560.11 MB
+      Day 14:    1 file(s) -   544.02 MB
+      Day 17:    1 file(s) -  1271.98 MB
+      Day 18:    1 file(s) -   507.55 MB
+      Day 19:    1 file(s) -   668.28 MB
+      Day 20:    1 file(s) -   641.78 MB
+      Day 21:    1 file(s) -   525.23 MB
+      Day 24:    1 file(s) -  1202.69 MB
+      Day 25:    1 file(s) -   625.57 MB
+      Day 26:    1 file(s) -   538.06 MB
+      Day 27:    1 file(s) -   586.57 MB
+      Day 28:    1 file(s) -   526.18 MB
+      >>> MISSING DAYS (10): 01, 02, 08, 09, 15, 16, 22, 23, 29, 30
+
+    Jul 2024  (07)   files: 23   size: 17022.18 MB
+      Day 01:    1 file(s) -  1289.79 MB
+      Day 02:    1 file(s) -   777.77 MB
+      Day 03:    1 file(s) -   593.42 MB
+      Day 04:    1 file(s) -   579.52 MB
+      Day 05:    1 file(s) -   526.74 MB
+      Day 08:    1 file(s) -  1288.63 MB
+      Day 09:    1 file(s) -   553.04 MB
+      Day 10:    1 file(s) -   534.13 MB
+      Day 11:    1 file(s) -   488.57 MB
+      Day 12:    1 file(s) -   547.42 MB
+      Day 15:    1 file(s) -   962.55 MB
+      Day 16:    1 file(s) -  1421.18 MB
+      Day 17:    1 file(s) -   584.29 MB
+      Day 18:    1 file(s) -   611.54 MB
+      Day 19:    1 file(s) -   517.64 MB
+      Day 22:    1 file(s) -  1282.33 MB
+      Day 23:    1 file(s) -   566.96 MB
+      Day 24:    1 file(s) -   418.98 MB
+      Day 25:    1 file(s) -   470.66 MB
+      Day 26:    1 file(s) -   735.64 MB
+      Day 29:    1 file(s) -  1253.33 MB
+      Day 30:    1 file(s) -   511.62 MB
+      Day 31:    1 file(s) -   506.43 MB
+      >>> MISSING DAYS (8): 06, 07, 13, 14, 20, 21, 27, 28
+
+    Aug 2024  (08)   files: 22   size: 15096.11 MB
+      Day 01:    1 file(s) -   501.75 MB
+      Day 02:    1 file(s) -   696.32 MB
+      Day 05:    1 file(s) -  1385.26 MB
+      Day 06:    1 file(s) -    574.5 MB
+      Day 07:    1 file(s) -   531.54 MB
+      Day 08:    1 file(s) -   547.15 MB
+      Day 09:    1 file(s) -   558.26 MB
+      Day 12:    1 file(s) -  1299.37 MB
+      Day 13:    1 file(s) -    546.5 MB
+      Day 14:    1 file(s) -   542.96 MB
+      Day 15:    1 file(s) -    573.5 MB
+      Day 16:    1 file(s) -   551.43 MB
+      Day 19:    1 file(s) -  1315.54 MB
+      Day 20:    1 file(s) -   535.67 MB
+      Day 21:    1 file(s) -   571.52 MB
+      Day 22:    1 file(s) -   561.24 MB
+      Day 23:    1 file(s) -   529.46 MB
+      Day 26:    1 file(s) -  1267.51 MB
+      Day 27:    1 file(s) -   390.51 MB
+      Day 28:    1 file(s) -   541.91 MB
+      Day 29:    1 file(s) -   507.99 MB
+      Day 30:    1 file(s) -   566.23 MB
+      >>> MISSING DAYS (9): 03, 04, 10, 11, 17, 18, 24, 25, 31
+
+    Sep 2024  (09)   files: 20   size: 13979.74 MB
+      Day 02:    1 file(s) -   1359.7 MB
+      Day 03:    1 file(s) -   662.58 MB
+      Day 04:    1 file(s) -   539.97 MB
+      Day 05:    1 file(s) -   581.17 MB
+      Day 06:    1 file(s) -   541.11 MB
+      Day 09:    1 file(s) -   119.62 MB
+      Day 11:    1 file(s) -   551.26 MB
+      Day 12:    1 file(s) -   572.87 MB
+      Day 13:    1 file(s) -   506.66 MB
+      Day 16:    1 file(s) -  1289.04 MB
+      Day 17:    1 file(s) -   712.48 MB
+      Day 18:    1 file(s) -   553.61 MB
+      Day 19:    1 file(s) -   590.82 MB
+      Day 20:    1 file(s) -   525.46 MB
+      Day 23:    1 file(s) -  1179.12 MB
+      Day 24:    1 file(s) -    780.5 MB
+      Day 25:    1 file(s) -   533.42 MB
+      Day 26:    1 file(s) -   526.66 MB
+      Day 27:    1 file(s) -   569.37 MB
+      Day 30:    1 file(s) -  1284.31 MB
+      >>> MISSING DAYS (10): 01, 07, 08, 10, 14, 15, 21, 22, 28, 29
+
+    Oct 2024  (10)   files: 23   size: 18302.53 MB
+      Day 01:    1 file(s) -      718 MB
+      Day 02:    1 file(s) -   778.25 MB
+      Day 03:    1 file(s) -   836.99 MB
+      Day 04:    1 file(s) -   616.36 MB
+      Day 07:    1 file(s) -  1408.79 MB
+      Day 08:    1 file(s) -   578.19 MB
+      Day 09:    1 file(s) -   939.33 MB
+      Day 10:    1 file(s) -   637.33 MB
+      Day 11:    1 file(s) -   987.95 MB
+      Day 14:    1 file(s) -  1491.36 MB
+      Day 15:    1 file(s) -   750.49 MB
+      Day 16:    1 file(s) -   598.59 MB
+      Day 17:    1 file(s) -    523.8 MB
+      Day 18:    1 file(s) -   815.12 MB
+      Day 21:    1 file(s) -  1357.84 MB
+      Day 22:    1 file(s) -   573.49 MB
+      Day 23:    1 file(s) -   551.68 MB
+      Day 24:    1 file(s) -    565.6 MB
+      Day 25:    1 file(s) -    557.3 MB
+      Day 28:    1 file(s) -  1315.24 MB
+      Day 29:    1 file(s) -   607.51 MB
+      Day 30:    1 file(s) -   548.28 MB
+      Day 31:    1 file(s) -   545.04 MB
+      >>> MISSING DAYS (8): 05, 06, 12, 13, 19, 20, 26, 27
+
+    Nov 2024  (11)   files: 15   size: 10864.14 MB
+      Day 01:    1 file(s) -    555.6 MB
+      Day 04:    1 file(s) -  1580.67 MB
+      Day 05:    1 file(s) -   591.17 MB
+      Day 14:    1 file(s) -   503.62 MB
+      Day 15:    1 file(s) -    519.5 MB
+      Day 18:    1 file(s) -   1358.5 MB
+      Day 19:    1 file(s) -   590.17 MB
+      Day 20:    1 file(s) -   547.74 MB
+      Day 21:    1 file(s) -   526.47 MB
+      Day 22:    1 file(s) -   543.23 MB
+      Day 25:    1 file(s) -  1337.55 MB
+      Day 26:    1 file(s) -   524.67 MB
+      Day 27:    1 file(s) -   582.66 MB
+      Day 28:    1 file(s) -   550.49 MB
+      Day 29:    1 file(s) -   552.09 MB
+      >>> MISSING DAYS (15): 02, 03, 06, 07, 08, 09, 10, 11, 12, 13, 16, 17, 23, 24, 30
+
+    Dec 2024  (12)   files: 22   size: 15737.23 MB
+      Day 02:    1 file(s) -  1286.91 MB
+      Day 03:    1 file(s) -  1016.32 MB
+      Day 04:    1 file(s) -    632.7 MB
+      Day 05:    1 file(s) -   561.39 MB
+      Day 06:    1 file(s) -    565.9 MB
+      Day 09:    1 file(s) -  1386.14 MB
+      Day 10:    1 file(s) -   549.85 MB
+      Day 11:    1 file(s) -    541.4 MB
+      Day 12:    1 file(s) -    535.7 MB
+      Day 13:    1 file(s) -   517.89 MB
+      Day 16:    1 file(s) -  1317.83 MB
+      Day 17:    1 file(s) -   556.18 MB
+      Day 18:    1 file(s) -   533.78 MB
+      Day 19:    1 file(s) -    563.3 MB
+      Day 20:    1 file(s) -   558.17 MB
+      Day 23:    1 file(s) -   1457.7 MB
+      Day 24:    1 file(s) -   551.55 MB
+      Day 25:    1 file(s) -   530.47 MB
+      Day 26:    1 file(s) -   396.89 MB
+      Day 27:    1 file(s) -   370.17 MB
+      Day 30:    1 file(s) -  1307.01 MB
+      Day 31:    1 file(s) -        0 MB
+      >>> MISSING DAYS (9): 01, 07, 08, 14, 15, 21, 22, 28, 29
+
+    >>> MISSING MONTHS in 2024 (5): Jan, Feb, Mar, Apr, May
+
+------------------------------------------------------------------------
+  YEAR 2025   (files: 192)
+------------------------------------------------------------------------
+
+    Jan 2025  (01)   files: 23   size: 15853 MB
+      Day 01:    1 file(s) -   486.56 MB
+      Day 02:    1 file(s) -    517.9 MB
+      Day 03:    1 file(s) -   716.09 MB
+      Day 06:    1 file(s) -   1314.2 MB
+      Day 07:    1 file(s) -   680.31 MB
+      Day 08:    1 file(s) -   590.46 MB
+      Day 09:    1 file(s) -   540.54 MB
+      Day 10:    1 file(s) -   565.07 MB
+      Day 13:    1 file(s) -  1419.87 MB
+      Day 14:    1 file(s) -   561.42 MB
+      Day 15:    1 file(s) -   526.85 MB
+      Day 16:    1 file(s) -    609.4 MB
+      Day 17:    1 file(s) -   571.68 MB
+      Day 20:    1 file(s) -  1379.69 MB
+      Day 21:    1 file(s) -   562.04 MB
+      Day 22:    1 file(s) -   591.82 MB
+      Day 23:    1 file(s) -   615.53 MB
+      Day 24:    1 file(s) -        0 MB
+      Day 27:    1 file(s) -  1339.34 MB
+      Day 28:    1 file(s) -   558.79 MB
+      Day 29:    1 file(s) -   528.64 MB
+      Day 30:    1 file(s) -   577.98 MB
+      Day 31:    1 file(s) -   598.81 MB
+      >>> MISSING DAYS (8): 04, 05, 11, 12, 18, 19, 25, 26
+
+    Feb 2025  (02)   files: 20   size: 14340.62 MB
+      Day 03:    1 file(s) -  1382.95 MB
+      Day 04:    1 file(s) -   614.26 MB
+      Day 05:    1 file(s) -   561.15 MB
+      Day 06:    1 file(s) -        0 MB
+      Day 07:    1 file(s) -   665.09 MB
+      Day 10:    1 file(s) -  1411.57 MB
+      Day 11:    1 file(s) -   737.75 MB
+      Day 12:    1 file(s) -        0 MB
+      Day 13:    1 file(s) -   608.57 MB
+      Day 14:    1 file(s) -   542.55 MB
+      Day 17:    1 file(s) -  1398.04 MB
+      Day 18:    1 file(s) -   625.85 MB
+      Day 19:    1 file(s) -   593.77 MB
+      Day 20:    1 file(s) -   566.84 MB
+      Day 21:    1 file(s) -   559.46 MB
+      Day 24:    1 file(s) -  1327.29 MB
+      Day 25:    1 file(s) -   843.66 MB
+      Day 26:    1 file(s) -   727.18 MB
+      Day 27:    1 file(s) -   611.17 MB
+      Day 28:    1 file(s) -   563.46 MB
+      >>> MISSING DAYS (8): 01, 02, 08, 09, 15, 16, 22, 23
+
+    Mar 2025  (03)   files: 18   size: 12676.88 MB
+      Day 03:    1 file(s) -  1301.35 MB
+      Day 04:    1 file(s) -   648.11 MB
+      Day 05:    1 file(s) -   672.54 MB
+      Day 06:    1 file(s) -        0 MB
+      Day 07:    1 file(s) -        0 MB
+      Day 10:    1 file(s) -  1349.21 MB
+      Day 11:    1 file(s) -   575.77 MB
+      Day 12:    1 file(s) -   618.21 MB
+      Day 13:    1 file(s) -   607.65 MB
+      Day 14:    1 file(s) -   538.63 MB
+      Day 17:    1 file(s) -  1392.24 MB
+      Day 18:    1 file(s) -   673.58 MB
+      Day 19:    1 file(s) -   595.09 MB
+      Day 20:    1 file(s) -   597.35 MB
+      Day 21:    1 file(s) -   599.56 MB
+      Day 24:    1 file(s) -  1360.48 MB
+      Day 25:    1 file(s) -   618.84 MB
+      Day 26:    1 file(s) -   528.28 MB
+      >>> MISSING DAYS (13): 01, 02, 08, 09, 15, 16, 22, 23, 27, 28, 29, 30, 31
+
+    Apr 2025  (04)   files: 21   size: 14299.75 MB
+      Day 02:    1 file(s) -  1391.48 MB
+      Day 03:    1 file(s) -        0 MB
+      Day 04:    1 file(s) -   696.46 MB
+      Day 07:    1 file(s) -  1315.26 MB
+      Day 08:    1 file(s) -        0 MB
+      Day 09:    1 file(s) -   743.84 MB
+      Day 10:    1 file(s) -   759.06 MB
+      Day 11:    1 file(s) -    665.9 MB
+      Day 14:    1 file(s) -  1722.74 MB
+      Day 15:    1 file(s) -   614.66 MB
+      Day 16:    1 file(s) -        0 MB
+      Day 17:    1 file(s) -        0 MB
+      Day 18:    1 file(s) -        0 MB
+      Day 21:    1 file(s) -  1253.47 MB
+      Day 22:    1 file(s) -   413.81 MB
+      Day 23:    1 file(s) -   992.48 MB
+      Day 24:    1 file(s) -   565.64 MB
+      Day 25:    1 file(s) -   608.84 MB
+      Day 28:    1 file(s) -  1372.46 MB
+      Day 29:    1 file(s) -   595.83 MB
+      Day 30:    1 file(s) -   587.83 MB
+      >>> MISSING DAYS (9): 01, 05, 06, 12, 13, 19, 20, 26, 27
+
+    May 2025  (05)   files: 12   size: 9251.83 MB
+      Day 01:    1 file(s) -  1345.02 MB
+      Day 02:    1 file(s) -   704.97 MB
+      Day 05:    1 file(s) -  1555.91 MB
+      Day 06:    1 file(s) -    431.7 MB
+      Day 07:    1 file(s) -    585.4 MB
+      Day 08:    1 file(s) -   614.22 MB
+      Day 09:    1 file(s) -   678.29 MB
+      Day 12:    1 file(s) -  1452.31 MB
+      Day 14:    1 file(s) -   155.31 MB
+      Day 28:    1 file(s) -   576.33 MB
+      Day 29:    1 file(s) -    542.1 MB
+      Day 30:    1 file(s) -   610.26 MB
+      >>> MISSING DAYS (19): 03, 04, 10, 11, 13, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 31
+
+    Jun 2025  (06)   files: 21   size: 16096.15 MB
+      Day 02:    1 file(s) -  1502.39 MB
+      Day 03:    1 file(s) -   662.28 MB
+      Day 04:    1 file(s) -   598.02 MB
+      Day 05:    1 file(s) -   576.24 MB
+      Day 06:    1 file(s) -   593.19 MB
+      Day 09:    1 file(s) -  1446.86 MB
+      Day 10:    1 file(s) -   569.88 MB
+      Day 11:    1 file(s) -   578.04 MB
+      Day 12:    1 file(s) -    595.3 MB
+      Day 13:    1 file(s) -   580.51 MB
+      Day 16:    1 file(s) -  1409.27 MB
+      Day 17:    1 file(s) -   627.97 MB
+      Day 18:    1 file(s) -    577.2 MB
+      Day 19:    1 file(s) -    680.4 MB
+      Day 20:    1 file(s) -   640.54 MB
+      Day 23:    1 file(s) -   794.81 MB
+      Day 24:    1 file(s) -   575.81 MB
+      Day 25:    1 file(s) -   570.95 MB
+      Day 26:    1 file(s) -   598.59 MB
+      Day 27:    1 file(s) -   567.22 MB
+      Day 30:    1 file(s) -  1350.71 MB
+      >>> MISSING DAYS (9): 01, 07, 08, 14, 15, 21, 22, 28, 29
+
+    Jul 2025  (07)   files: 12   size: 9125.29 MB
+      Day 01:    1 file(s) -   586.97 MB
+      Day 02:    1 file(s) -   640.38 MB
+      Day 03:    1 file(s) -   641.67 MB
+      Day 04:    1 file(s) -   677.54 MB
+      Day 07:    1 file(s) -  1223.64 MB
+      Day 23:    1 file(s) -   606.73 MB
+      Day 24:    1 file(s) -   829.12 MB
+      Day 25:    1 file(s) -   846.24 MB
+      Day 28:    1 file(s) -  1357.69 MB
+      Day 29:    1 file(s) -   575.86 MB
+      Day 30:    1 file(s) -   599.58 MB
+      Day 31:    1 file(s) -   539.86 MB
+      >>> MISSING DAYS (19): 05, 06, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 26, 27
+
+    Aug 2025  (08)   files: 21   size: 16698.19 MB
+      Day 01:    1 file(s) -   635.26 MB
+      Day 04:    1 file(s) -  1491.16 MB
+      Day 05:    1 file(s) -   632.53 MB
+      Day 06:    1 file(s) -   584.19 MB
+      Day 07:    1 file(s) -   625.15 MB
+      Day 08:    1 file(s) -   570.31 MB
+      Day 11:    1 file(s) -  1419.77 MB
+      Day 12:    1 file(s) -   575.05 MB
+      Day 13:    1 file(s) -    602.5 MB
+      Day 14:    1 file(s) -   606.94 MB
+      Day 15:    1 file(s) -   544.22 MB
+      Day 18:    1 file(s) -  1315.23 MB
+      Day 19:    1 file(s) -   775.88 MB
+      Day 20:    1 file(s) -  1625.03 MB
+      Day 21:    1 file(s) -   606.56 MB
+      Day 22:    1 file(s) -   553.72 MB
+      Day 25:    1 file(s) -  1367.24 MB
+      Day 26:    1 file(s) -   442.61 MB
+      Day 27:    1 file(s) -   592.98 MB
+      Day 28:    1 file(s) -   544.63 MB
+      Day 29:    1 file(s) -   587.22 MB
+      >>> MISSING DAYS (10): 02, 03, 09, 10, 16, 17, 23, 24, 30, 31
+
+    Sep 2025  (09)   files: 15   size: 11980.61 MB
+      Day 01:    1 file(s) -  1380.44 MB
+      Day 02:    1 file(s) -   679.18 MB
+      Day 03:    1 file(s) -   591.25 MB
+      Day 04:    1 file(s) -   592.79 MB
+      Day 05:    1 file(s) -   598.63 MB
+      Day 08:    1 file(s) -   1369.4 MB
+      Day 09:    1 file(s) -   916.07 MB
+      Day 10:    1 file(s) -    87.51 MB
+      Day 22:    1 file(s) -   1441.9 MB
+      Day 23:    1 file(s) -    657.3 MB
+      Day 24:    1 file(s) -   546.45 MB
+      Day 25:    1 file(s) -   636.08 MB
+      Day 26:    1 file(s) -   535.46 MB
+      Day 29:    1 file(s) -  1377.66 MB
+      Day 30:    1 file(s) -   570.48 MB
+      >>> MISSING DAYS (15): 06, 07, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 27, 28
+
+    Oct 2025  (10)   files: 23   size: 19804.38 MB
+      Day 01:    1 file(s) -   615.71 MB
+      Day 02:    1 file(s) -  1153.65 MB
+      Day 03:    1 file(s) -  1091.12 MB
+      Day 06:    1 file(s) -  1336.04 MB
+      Day 07:    1 file(s) -   971.12 MB
+      Day 08:    1 file(s) -  1420.89 MB
+      Day 09:    1 file(s) -    622.2 MB
+      Day 10:    1 file(s) -   603.95 MB
+      Day 13:    1 file(s) -   1497.3 MB
+      Day 14:    1 file(s) -    700.4 MB
+      Day 15:    1 file(s) -    625.8 MB
+      Day 16:    1 file(s) -   667.84 MB
+      Day 17:    1 file(s) -   608.91 MB
+      Day 20:    1 file(s) -  1471.48 MB
+      Day 21:    1 file(s) -   634.54 MB
+      Day 22:    1 file(s) -   605.03 MB
+      Day 23:    1 file(s) -   575.98 MB
+      Day 24:    1 file(s) -    591.3 MB
+      Day 27:    1 file(s) -  1375.15 MB
+      Day 28:    1 file(s) -   803.39 MB
+      Day 29:    1 file(s) -   629.39 MB
+      Day 30:    1 file(s) -   560.21 MB
+      Day 31:    1 file(s) -   642.99 MB
+      >>> MISSING DAYS (8): 04, 05, 11, 12, 18, 19, 25, 26
+
+    Nov 2025  (11)   files: 6   size: 3994.87 MB
+      Day 03:    1 file(s) -  1429.36 MB
+      Day 04:    1 file(s) -   743.35 MB
+      Day 05:    1 file(s) -    640.3 MB
+      Day 06:    1 file(s) -    555.3 MB
+      Day 07:    1 file(s) -   615.87 MB
+      Day 10:    1 file(s) -    10.69 MB
+      >>> MISSING DAYS (24): 01, 02, 08, 09, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30
+
+    >>> MISSING MONTHS in 2025 (1): Dec
+
+------------------------------------------------------------------------
+  YEAR 2026   (files: 36)
+------------------------------------------------------------------------
+
+    Mar 2026  (03)   files: 2   size: 1976.95 MB
+      Day 30:    1 file(s) -   1365.7 MB
+      Day 31:    1 file(s) -   611.25 MB
+      >>> MISSING DAYS (29): 01, 02, 03, 04, 05, 06, 07, 08, 09, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29
+
+    Apr 2026  (04)   files: 22   size: 18920.86 MB
+      Day 01:    1 file(s) -   634.44 MB
+      Day 02:    1 file(s) -   791.61 MB
+      Day 03:    1 file(s) -  1132.08 MB
+      Day 06:    1 file(s) -  1232.75 MB
+      Day 07:    1 file(s) -   476.11 MB
+      Day 08:    1 file(s) -   970.65 MB
+      Day 09:    1 file(s) -   734.98 MB
+      Day 10:    1 file(s) -   850.22 MB
+      Day 13:    1 file(s) -  2295.32 MB
+      Day 14:    1 file(s) -   672.35 MB
+      Day 15:    1 file(s) -   619.73 MB
+      Day 16:    1 file(s) -   597.62 MB
+      Day 17:    1 file(s) -    639.6 MB
+      Day 20:    1 file(s) -  1361.44 MB
+      Day 21:    1 file(s) -    664.9 MB
+      Day 22:    1 file(s) -   548.18 MB
+      Day 23:    1 file(s) -   623.85 MB
+      Day 24:    1 file(s) -    635.5 MB
+      Day 27:    1 file(s) -  1661.64 MB
+      Day 28:    1 file(s) -   607.52 MB
+      Day 29:    1 file(s) -   569.22 MB
+      Day 30:    1 file(s) -   601.15 MB
+      >>> MISSING DAYS (8): 04, 05, 11, 12, 18, 19, 25, 26
+
+    May 2026  (05)   files: 12   size: 9810.28 MB
+      Day 01:    1 file(s) -   612.21 MB
+      Day 04:    1 file(s) -  1561.86 MB
+      Day 05:    1 file(s) -   450.97 MB
+      Day 06:    1 file(s) -   688.95 MB
+      Day 07:    1 file(s) -   648.85 MB
+      Day 08:    1 file(s) -   595.08 MB
+      Day 11:    1 file(s) -  1400.21 MB
+      Day 12:    1 file(s) -   596.25 MB
+      Day 13:    1 file(s) -   556.92 MB
+      Day 14:    1 file(s) -   592.32 MB
+      Day 15:    1 file(s) -   638.13 MB
+      Day 18:    1 file(s) -  1468.53 MB
+      >>> MISSING DAYS (19): 02, 03, 09, 10, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31
+
+    >>> MISSING MONTHS in 2026 (9): Jan, Feb, Jun, Jul, Aug, Sep, Oct, Nov, Dec
+
+################################################################################
+FOLDER PATH : C:\Program Files\JSCAPE MFT Server\domains\SFTPSERVER1\searching\accounts\electralink
+Files with date : 0
+################################################################################
+
+  (no files with a recognisable date in this folder)
+
+################################################################################
+FOLDER PATH : C:\Program Files\JSCAPE MFT Server\users\SFTPSERVER1\electralink
+Files with date : 0
+################################################################################
+
+  (no files with a recognisable date in this folder)
+
+################################################################################
+FOLDER PATH : C:\Users\electralink
+Files with date : 0
+################################################################################
+
+  (no files with a recognisable date in this folder)
+
+################################################################################
+FOLDER PATH : C:\Users\Jack.Kelly\.conda\envs\electralink_ingest
+Files with date : 0
+################################################################################
+
+  (no files with a recognisable date in this folder)
+
+################################################################################
+FOLDER PATH : C:\Users\Vikash.Kumar5\Desktop\Electralink_Reports
+Files with date : 0
+################################################################################
+
+  (no files with a recognisable date in this folder)
+
+################################################################################
+FOLDER PATH : C:\Users\Vikash.Kumar5\Desktop\Electralink_Reports_bckup
+Files with date : 0
+################################################################################
+
+  (no files with a recognisable date in this folder)
+
+
