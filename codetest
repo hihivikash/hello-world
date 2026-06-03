@@ -1,0 +1,17 @@
+import socket
+
+host = "adb-2951285754262024.4.azuredatabricks.net"
+
+# 1. What does DNS resolve to?
+print("Resolves to:", socket.gethostbyname(host))
+
+# 2. Can we open TCP 443 at all?
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+s.settimeout(5)
+try:
+    s.connect((host, 443))
+    print("TCP 443: OPEN")
+except Exception as e:
+    print("TCP 443: BLOCKED ->", e)
+finally:
+    s.close()
