@@ -1,0 +1,257 @@
+KeyboardInterrupt                         Traceback (most recent call last)
+Cell In[2], line 2
+      1 from databricks import sql  
+----> 2 connection=sql.connect(  
+      3    server_hostname = "adb-2951285754262024.4.azuredatabricks.net",  
+      4    http_path = "/sql/1.0/warehouses/a89e88b3205dad8a",  
+      5    access_token ="",use_cloud_fetch=False)
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/__init__.py:93, in connect(server_hostname, http_path, access_token, **kwargs)
+     90 def connect(server_hostname, http_path, access_token=None, **kwargs) -> "Connection":
+     91     from .client import Connection
+---> 93     return Connection(server_hostname, http_path, access_token, **kwargs)
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/client.py:318, in Connection.__init__(self, server_hostname, http_path, access_token, http_headers, session_configuration, catalog, schema, _use_arrow_native_complex_types, ignore_transactions, query_tags, **kwargs)
+    306 try:
+    307     self.session = Session(
+    308         server_hostname,
+    309         http_path,
+   (...)
+    316         **kwargs,
+    317     )
+--> 318     self.session.open()
+    319 except Exception as e:
+    320     # Respect user's telemetry preference even during connection failure
+    321     enable_telemetry = kwargs.get("enable_telemetry", True)
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/session.py:186, in Session.open(self)
+    185 def open(self):
+--> 186     self._session_id = self.backend.open_session(
+    187         session_configuration=self.session_configuration,
+    188         catalog=self.catalog,
+    189         schema=self.schema,
+    190     )
+    192     self.protocol_version = self.get_protocol_version(self._session_id)
+    193     self.is_open = True
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/backend/thrift_backend.py:600, in ThriftDatabricksClient.open_session(self, session_configuration, catalog, schema)
+    591     initial_namespace = None
+    593 open_session_req = ttypes.TOpenSessionReq(
+    594     client_protocol_i64=ttypes.TProtocolVersion.SPARK_CLI_SERVICE_PROTOCOL_V7,
+    595     client_protocol=None,
+   (...)
+    598     configuration=session_configuration,
+    599 )
+--> 600 response = self.make_request(self._client.OpenSession, open_session_req)
+    601 self._check_initial_namespace(catalog, schema, response)
+    602 self._check_protocol_version(response)
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/backend/thrift_backend.py:513, in ThriftDatabricksClient.make_request(self, method, request, retryable)
+    508 for attempt in range(1, max_attempts + 1):
+    509     # We have a lock here because .cancel can be called from a separate thread.
+    510     # We do not want threads to be simultaneously sharing the Thrift Transport
+    511     # because we use its state to determine retries
+    512     with self._request_lock:
+--> 513         response_or_error_info = attempt_request(attempt)
+    514     elapsed = get_elapsed()
+    516     # conditions: success, non-retry-able, no-attempts-left, no-time-left, delay+retry
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/backend/thrift_backend.py:419, in ThriftDatabricksClient.make_request.<locals>.attempt_request(attempt)
+    416     self._transport.set_retry_command_type(this_command_type)
+    417     self._transport.startRetryTimer()
+--> 419 response = method(request)
+    421 # We need to call type(response) here because thrift doesn't implement __name__ attributes for thrift responses
+    422 logger.debug(
+    423     "Received response: {}(<REDACTED>)".format(type(response).__name__)
+    424 )
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py:204, in Client.OpenSession(self, req)
+    198 def OpenSession(self, req):
+    199     """
+    200     Parameters:
+    201      - req
+    202 
+    203     """
+--> 204     self.send_OpenSession(req)
+    205     return self.recv_OpenSession()
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/thrift_api/TCLIService/TCLIService.py:213, in Client.send_OpenSession(self, req)
+    211 args.write(self._oprot)
+    212 self._oprot.writeMessageEnd()
+--> 213 self._oprot.trans.flush()
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/databricks/sql/auth/thrift_http_client.py:193, in THttpClient.flush(self)
+    190     headers.update(**custom_headers)
+    192 # HTTP request
+--> 193 self.__resp = self.__pool.request(
+    194     "POST",
+    195     url=self.path,
+    196     body=data,
+    197     headers=headers,
+    198     preload_content=False,
+    199     timeout=self.__timeout,
+    200     retries=self.retry_policy,
+    201 )
+    203 # Get reply to flush the request
+    204 self.code = self.__resp.status
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/_request_methods.py:143, in RequestMethods.request(self, method, url, body, fields, headers, json, **urlopen_kw)
+    135     return self.request_encode_url(
+    136         method,
+    137         url,
+   (...)
+    140         **urlopen_kw,
+    141     )
+    142 else:
+--> 143     return self.request_encode_body(
+    144         method, url, fields=fields, headers=headers, **urlopen_kw
+    145     )
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/_request_methods.py:278, in RequestMethods.request_encode_body(self, method, url, fields, headers, encode_multipart, multipart_boundary, **urlopen_kw)
+    274     extra_kw["headers"].setdefault("Content-Type", content_type)
+    276 extra_kw.update(urlopen_kw)
+--> 278 return self.urlopen(method, url, **extra_kw)
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connectionpool.py:871, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)
+    866 if not conn:
+    867     # Try again
+    868     log.warning(
+    869         "Retrying (%r) after connection broken by '%r': %s", retries, err, url
+    870     )
+--> 871     return self.urlopen(
+    872         method,
+    873         url,
+    874         body,
+    875         headers,
+    876         retries,
+    877         redirect,
+    878         assert_same_host,
+    879         timeout=timeout,
+    880         pool_timeout=pool_timeout,
+    881         release_conn=release_conn,
+    882         chunked=chunked,
+    883         body_pos=body_pos,
+    884         preload_content=preload_content,
+    885         decode_content=decode_content,
+    886         **response_kw,
+    887     )
+    889 # Handle redirect?
+    890 redirect_location = redirect and response.get_redirect_location()
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connectionpool.py:871, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)
+    866 if not conn:
+    867     # Try again
+    868     log.warning(
+    869         "Retrying (%r) after connection broken by '%r': %s", retries, err, url
+    870     )
+--> 871     return self.urlopen(
+    872         method,
+    873         url,
+    874         body,
+    875         headers,
+    876         retries,
+    877         redirect,
+    878         assert_same_host,
+    879         timeout=timeout,
+    880         pool_timeout=pool_timeout,
+    881         release_conn=release_conn,
+    882         chunked=chunked,
+    883         body_pos=body_pos,
+    884         preload_content=preload_content,
+    885         decode_content=decode_content,
+    886         **response_kw,
+    887     )
+    889 # Handle redirect?
+    890 redirect_location = redirect and response.get_redirect_location()
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connectionpool.py:871, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)
+    866 if not conn:
+    867     # Try again
+    868     log.warning(
+    869         "Retrying (%r) after connection broken by '%r': %s", retries, err, url
+    870     )
+--> 871     return self.urlopen(
+    872         method,
+    873         url,
+    874         body,
+    875         headers,
+    876         retries,
+    877         redirect,
+    878         assert_same_host,
+    879         timeout=timeout,
+    880         pool_timeout=pool_timeout,
+    881         release_conn=release_conn,
+    882         chunked=chunked,
+    883         body_pos=body_pos,
+    884         preload_content=preload_content,
+    885         decode_content=decode_content,
+    886         **response_kw,
+    887     )
+    889 # Handle redirect?
+    890 redirect_location = redirect and response.get_redirect_location()
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connectionpool.py:787, in HTTPConnectionPool.urlopen(self, method, url, body, headers, retries, redirect, assert_same_host, timeout, pool_timeout, release_conn, chunked, body_pos, preload_content, decode_content, **response_kw)
+    784 response_conn = conn if not release_conn else None
+    786 # Make the request on the HTTPConnection object
+--> 787 response = self._make_request(
+    788     conn,
+    789     method,
+    790     url,
+    791     timeout=timeout_obj,
+    792     body=body,
+    793     headers=headers,
+    794     chunked=chunked,
+    795     retries=retries,
+    796     response_conn=response_conn,
+    797     preload_content=preload_content,
+    798     decode_content=decode_content,
+    799     **response_kw,
+    800 )
+    802 # Everything went great!
+    803 clean_exit = True
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connectionpool.py:464, in HTTPConnectionPool._make_request(self, conn, method, url, body, headers, retries, timeout, chunked, response_conn, preload_content, decode_content, enforce_content_length)
+    461 try:
+    462     # Trigger any extra validation we need to do.
+    463     try:
+--> 464         self._validate_conn(conn)
+    465     except (SocketTimeout, BaseSSLError) as e:
+    466         self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connectionpool.py:1093, in HTTPSConnectionPool._validate_conn(self, conn)
+   1091 # Force connect early to allow us to validate the connection.
+   1092 if conn.is_closed:
+-> 1093     conn.connect()
+   1095 # TODO revise this, see https://github.com/urllib3/urllib3/issues/2791
+   1096 if not conn.is_verified and not conn.proxy_is_verified:
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connection.py:753, in HTTPSConnection.connect(self)
+    751 try:
+    752     sock: socket.socket | ssl.SSLSocket
+--> 753     self.sock = sock = self._new_conn()
+    754     server_hostname: str = self.host
+    755     tls_in_tls = False
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/connection.py:198, in HTTPConnection._new_conn(self)
+    193 """Establish a socket connection and set nodelay settings on it.
+    194 
+    195 :return: New socket connection.
+    196 """
+    197 try:
+--> 198     sock = connection.create_connection(
+    199         (self._dns_host, self.port),
+    200         self.timeout,
+    201         source_address=self.source_address,
+    202         socket_options=self.socket_options,
+    203     )
+    204 except socket.gaierror as e:
+    205     raise NameResolutionError(self.host, self, e) from e
+
+File /anaconda/envs/jupyter_env/lib/python3.10/site-packages/urllib3/util/connection.py:73, in create_connection(address, timeout, source_address, socket_options)
+     71 if source_address:
+     72     sock.bind(source_address)
+---> 73 sock.connect(sa)
+     74 # Break explicitly a reference cycle
+     75 err = None
+
+KeyboardInterrupt: 
